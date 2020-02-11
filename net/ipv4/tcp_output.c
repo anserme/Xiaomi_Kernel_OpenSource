@@ -1821,6 +1821,7 @@ static bool tcp_snd_wnd_test(const struct tcp_sock *tp,
 
 	return !after(end_seq, tcp_wnd_end(tp));
 }
+EXPORT_SYMBOL(tcp_snd_wnd_test);
 
 /* Trim TSO SKB to LEN bytes, put the remaining data into a new packet
  * which is put after SKB on the list.  It is very much like
